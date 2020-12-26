@@ -1,5 +1,5 @@
-//prompts
 var rain = prompt("How many inches of rain fell?");
+console.log (rainfall(rain));
 var fertilizer = prompt("Did you use fertilizer?");
 var brand = "Did you use premium or regular fertilizer?";
 var rainYield;
@@ -34,7 +34,7 @@ function manure(answer){
         var grow = prompt (brand);
         type(grow);
     }
-    else{
+    else if(answer === "no"){
         console.log("The yield should be " + rainYield + " bushels per acre.");
     }
 }
@@ -50,7 +50,6 @@ function type(premium){
 }
 
 // calls
-console.log (rainfall(rain));
 rainCalculation(rain);
 manure(fertilizer);
 
