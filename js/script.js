@@ -11,7 +11,7 @@ function rainfall(inches){
     for (var x = 0; x < inches; x++){
         rainAmount = rainAmount + "*";
     }
-    return (rainAmount)
+    return (rainAmount);
 }
 
 function rainCalculation(inches){
@@ -35,7 +35,7 @@ function manure(answer){
         type(grow);
     }
     else{
-        console.log(rainYield);
+        console.log("The yield should be " + rainYield + " bushels per acre.");
     }
 }
 
@@ -46,7 +46,7 @@ function type(premium){
     else{
         total = rainYield * 1.1;
     }
-    console.log(total);
+    console.log("The yield should be " + total + " bushels per acre.");
 }
 
 // calls
